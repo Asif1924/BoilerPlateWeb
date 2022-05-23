@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BoilerPlateWeb.Master.cs" Inherits="BoilerPlateWeb.BoilerPlateWeb" %>
+
+<!DOCTYPE html>
+
+<html>
+<script type="text/javascript">
+    //Stop Form Submission of Enter Key Press
+    function stopRKey(evt) {
+        var evt = (evt) ? evt : ((event) ? event : null);
+        var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+        if ((evt.keyCode == 13) && (node.type == "text")) { return false; }
+    }
+    document.onkeypress = stopRKey;
+</script>
+<head runat="server">
+    <title>ASL Reporting</title>
+    <link href="~/Style.css" rel="stylesheet" type="text/css" runat="server" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptManager" runat="server"></asp:ScriptManager>
+        <div class="TopBandDiv">
+            <img src="Images/ASL_Logo.png" class="Logo"/>
+        </div>
+        <div style="text-align:right">
+         
+        </div>
+        <div class="MenuDiv">
+            <table>
+                <tr>
+                    <td>
+                        <asp:Menu RenderingMode="Table" ID="menu1" runat="server" DataSourceID="SiteMapDataSource1"
+                            Orientation="Horizontal"
+                            DynamicSelectedStyle-CssClass="MenuDynamicSelected"
+                            DynamicMenuStyle-CssClass="MenuDynamic"
+                            StaticMenuStyle-CssClass="MenuStatic"
+                            StaticSelectedStyle-CssClass="MenuStaticSelected"
+                            DynamicHoverStyle-CssClass="MenuHover"
+                            DynamicMenuItemStyle-CssClass="MenuDynamicItem"
+                            StaticHoverStyle-CssClass="MenuStaticHover"
+                            StaticMenuItemStyle-CssClass="MenuStaticItem" >
+                        </asp:Menu>
+                    </td>
+                    <td style="text-align:right; width:1%; white-space:nowrap;">
+                        <asp:Button ID="signoutB" runat="server" Text="Sign Out" OnClick="signoutB_Click" CssClass="Button" BorderStyle="None"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <asp:LinkButton ID="enterpriseHomeLB" runat="server" Text="ASL Enterprise Home" OnClick="enterpriseHomeLB_Click" />
+        </div>
+        <div class="SiteMap">
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:sitemappath runat="server" ID="sitemap"></asp:sitemappath>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="cph" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

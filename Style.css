@@ -1,0 +1,188 @@
+﻿.TopBandDiv {
+    background-color: #F7B322;
+    height: 150px;
+    overflow:auto;
+}
+
+.Logo {
+    padding:38px;
+}
+
+.ChildMainDiv {
+    clear:both;
+}
+
+.MenuDiv {
+    background-color: black;
+    margin: auto;
+    padding: 25px;
+}
+
+.DynamicMenu {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: lightslategray;
+    color: #F7B322;
+}
+
+.DynamicMenu {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #F7B322;
+}
+
+.MenuStatic {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #F7B322;
+}
+
+.MenuStaticSelected {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: lightslategray; 
+    color: #F7B322;
+}
+
+.MenuStaticHover {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: lightslategray;
+    color: #F7B322;
+}
+
+.MenuStaticItem {
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.MenuHover {
+    background-color: lightslategray;
+    color:#F7B322;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.MenuDynamicItem {
+    box-sizing: content-box;
+    width: 100%;
+    border: solid #000000 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Button {
+    background-color:orange;
+    color:white;
+}
+
+.SiteMap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.myCalendar {
+    font-family: 'Courier New';
+    font-weight: 100;
+    color: black;
+    background-color: #F7B322;
+    box-sizing: content-box;
+    width: 100%;
+    border: solid #000000 10px;
+}
+
+.myCalendarDay {
+    font-family: 'Courier New';
+    font-weight: 100;
+    color: black;
+    background-color: #F7B322
+}
+
+.myCalendarDayHeader {
+    font-family: 'Courier New';
+    font-weight: 300;
+    color: black;
+    background-color: gold;
+}
+
+.myCalendarNextPrev {
+    font-family: 'Courier New';
+    font-weight: 600;
+    color: black;
+    background-color: #F7B322
+}
+
+.myCalendarSelector {
+    font-family: 'Courier New';
+    font-weight: 400;
+    color: black;
+    background-color: #FBD814
+}
+
+.myCalendarToday {
+    font-family: 'Courier New';
+    font-weight: 200;
+    color: black;
+    text-decoration-color:black;
+    background-color: yellow;
+}
+
+.myCalendarTitle {
+    font-family: 'Courier New';
+    font-weight: 600;
+    color: black;
+    background-color: #FBD814
+}
+
+.StandardTD {
+    vertical-align:top;
+}
+
+.Grid {
+    color: black;
+    background-color: lightgray;
+    font-family: 'Courier New';
+}
+
+.GridAlternateRow {
+    color: black;
+    background-color: lightslategray;
+    font-family: 'Courier New';
+}
+
+.GridRow {
+    color: black;
+    font-family: 'Courier New';
+    background-color: lightgray;
+}
+
+.GridHeader {
+    font-family: 'Courier New';
+    font-weight: 400;
+    color: black;
+    background-color: #F7B322
+}
+
+.GridFooter {
+    font-family: 'Courier New';
+    font-weight: 400;
+    color: black;
+    background-color: #F7B322
+}
+
+.GridPager {
+    font-family: 'Courier New';
+    font-weight: 100;
+    background-color: orange;
+    color: white;
+}
+
+.NonStretchableTextBox {
+    resize: none;
+    overflow: auto;
+}
+
+.TableCell {
+    vertical-align:top;
+}

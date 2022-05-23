@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Admin.aspx" title="Main Menu"  description="">
+    <siteMapNode url="CRUD.aspx?table=FileAgedNotifications&amp;hidden=timestamp" title="File Aged Notifications"  description="" />
+    <siteMapNode url="CRUD.aspx?table=TimedNotifications&amp;hidden=timestamp&amp;lookup=TimedNotificationType-TimedNotificationType-TimedNotificationType&amp;deletechildinfo=NotificationEmails-id-notificationid-NotificationType__TimedNotifications" title="Timed Notifications"  description="" />    
+    <siteMapNode url="CRUD.aspx?table=NotificationEmails&amp;lookuptable=Notification-NotificationType-Name&amp;lookup=NotificationType-NotificationType-NotificationType" title="Notification Email Addresses"  description="" />
+  </siteMapNode>
+</siteMap>
+<!--
+FileAgedNotifications
+FileFeedAverageIntervalNotifications
+NotificationEmails
+NotificationType
+ServerConnectivityNotifications
+TimedNotifications
+TimedNotificationType
+-->
